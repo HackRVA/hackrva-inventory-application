@@ -17,6 +17,9 @@ Current feature wishlist:
 ** I'm comfortable with SQLAlchemy, and plan to use it, but if things
    get to hairy in turbogears, which I've heard they will, we might
    switch midstream to Django ORM, and write it up in Django.
+* we may also focus on a NoSQL approach, partially just to try it out,
+  also because it's nice to have things in JSON format when working
+  with webapps.
 
 Naturally all of this is subject to change and we'll probably test in
 production :) Why, because I'm a dirtbag.
