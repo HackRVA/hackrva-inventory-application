@@ -1,0 +1,26 @@
+== HackRVa Inventory Application ==
+
+Please read the wiki at http://wiki.github.com/mcphargus/hackrva-inventory-application/ for the most up-to-date information.
+
+This will be an internal-use application by HackRVa. We'll use this to
+upload assets to our inventory and track things that belong to
+individual members.
+
+== Plan ==
+
+This README file serves as an appspec and will include information
+about features to be added, etc.
+
+Current feature wishlist:
+
+* User management (duh) probably via OpenID or Google Authentication
+* barcode tracking (QR code pointing to internal URL handler
+* connection to a PostgreSQL database via an ORM 
+** I'm comfortable with SQLAlchemy, and plan to use it, but if things
+   get to hairy in turbogears, which I've heard they will, we might
+   switch midstream to Django ORM, and write it up in Django.
+* we may also focus on a NoSQL approach, partially just to try it out,
+  also because it's nice to have things in JSON format when working
+  with webapps.
+
+
