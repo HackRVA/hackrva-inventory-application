@@ -1,5 +1,7 @@
 == HackRVa Inventory Application ==
 
+Please read the wiki at http://wiki.github.com/mcphargus/hackrva-inventory-application/ for the most up-to-date information.
+
 This will be an internal-use application by HackRVa. We'll use this to
 upload assets to our inventory and track things that belong to
 individual members.
@@ -21,5 +23,4 @@ Current feature wishlist:
   also because it's nice to have things in JSON format when working
   with webapps.
 
-Naturally all of this is subject to change and we'll probably test in
-production :) Why, because I'm a dirtbag.
+
