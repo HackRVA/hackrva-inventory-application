@@ -1,0 +1,16 @@
+<html>
+
+<body>
+
+{% if latest_device_list %}
+ <ul>
+ {% for device in latest_device_list %}
+  <li><a href="/devices/{{device.id}}/">{{device.description}}</a></li>
+ {% endfor %}
+ </ul>
+{% else %}
+ <p>NO devices are available.</p>
+{% endif %}
+
+</body>
+</html>

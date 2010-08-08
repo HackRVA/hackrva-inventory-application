@@ -1,0 +1,22 @@
+<html>
+<body>
+
+{% if device_detail %}
+ <table>
+
+   <tr><td>
+    {{device_detail.description}}
+   </td></tr>
+   <tr><td><em>Make</em></td>
+     <td><em>Model</em></td></tr>
+   <tr><td>{{device_detail.make}}</td>
+     <td>{{device_detail.model}}</td></tr>
+   <tr><td>{{device_detail.owner.email}}</td></tr>
+</table>
+
+{% else %}
+ Please specify a device.
+{% endif %}
+
+</body>
+</html>

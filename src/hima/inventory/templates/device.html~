@@ -1,0 +1,15 @@
+<html>
+<body>
+
+{% if device_detail %}
+<table>
+{% for device in device_detail %}
+<tr><td>
+{{device.description}}
+</td></tr>
+{% endfor %}
+{% else %}
+Please specify a device.
+{% endif %}
+</body>
+</html>

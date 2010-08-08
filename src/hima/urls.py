@@ -14,4 +14,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
+    (r'^inventory/','hima.inventory.views.index'),
+    (r'^devices/(?P<device_id>\d+)/$','hima.inventory.views.detail'),
 )
