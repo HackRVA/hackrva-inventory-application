@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASE_ENGINE = 'django.db.backends.postgresql_psycopg2' # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = 'hima'             # Or path to database file if using sqlite3.
 DATABASE_USER = 'hima'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'hackrva'         # Not used with sqlite3.
+DATABASE_PASSWORD = 'your_password'         # Not used with sqlite3.
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = '5432'             # Set to empty string for default. Not used with sqlite3.
 
