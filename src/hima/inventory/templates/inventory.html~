@@ -14,6 +14,7 @@
 <div id="brought"><h6>Brought to you by HackRVA</h6></div>
 
 <table style="position:fixed; top:100px; left:25px; font-family:sans-serif;" summary="Inventory contents sorted by add date" border="1" cellpadding="2" cellspacing="0" width="500" frame="box">
+
 {% if latest_device_list %}
 <tr><th>Device ID</th><th>Description</th></tr>
 {% for device in latest_device_list %}

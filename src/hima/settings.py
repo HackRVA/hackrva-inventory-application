@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASE_ENGINE = 'django.db.backends.postgresql_psycopg2' # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = 'hima'             # Or path to database file if using sqlite3.
 DATABASE_USER = 'hima'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'hinv123'         # Not used with sqlite3.
+DATABASE_PASSWORD = 'hackrva'         # Not used with sqlite3.
 DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = '5432'             # Set to empty string for default. Not used with sqlite3.
 
@@ -69,8 +69,6 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/home/mcphargus/Projects/hackrva-inventory-application/src/hima/inventory/templates",
-    "/usr/local/django/hima/inventory/templates",
 )
 
 INSTALLED_APPS = (

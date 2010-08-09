@@ -14,13 +14,26 @@
 <div id="brought"><h6>Brought to you by HackRVA</h6></div>
 
 <table style="position:fixed; top:100px; left:25px; font-family:sans-serif;" summary="Inventory contents sorted by add date" border="1" cellpadding="2" cellspacing="0" width="500" frame="box">
+
 {% if latest_device_list %}
-<tr><th>Device ID</th><th>Description</th></tr>
-{% for device in latest_device_list %}
-<tr><td><center>{{device.id}}</td><td><center>{{device.description}}</td></tr>
-{% endfor %}
+  <tr>
+    <th>ID</th>
+    <th>Make</th>
+    <th>Model</th>
+    <th>Description</th>
+    <Th>Owner</th>
+  </tr>
+    {% for device in latest_device_list %}
+  <tr>
+    <td><center>{{device.id}}</td>
+    <td><center>{{device.make}}</td>
+    <td><center>{{device.model}}</td>
+    <td><center><a href="/inventory/{{device.id}}/">{{device.description}}</a></td>
+    <Td><center><a href="mailto:{{device.owner.email}}">{{device.owner.name}}</td>
+  </tr>
+  {% endfor %}
 {% else %}
-<tr><td>There are no devices in the database at this time.</td></tr>
+  <tr><td>There are no devices in the database at this time.</td></tr>
 {% endif %}
 </table>
 
